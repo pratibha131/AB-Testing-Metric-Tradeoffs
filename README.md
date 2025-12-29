@@ -98,3 +98,29 @@ Bootstrap confidence intervals
 A/B testing best practices
 
 Product & business metric reasoning
+
+## 📂 Repository Contents
+
+A-B-Testing-Refactored.ipynb → End-to-end analysis notebook
+
+ab_test_full_project_dataset.csv → Dataset used for analysis
+
+## 💡 Why This Project Matters
+
+This project emphasizes:
+
+Decision-making under uncertainty
+
+Metric trade-offs instead of single-metric optimization
+
+Business impact over statistical novelty
+
+It reflects how product analytics is practiced in real organizations—not textbook scenarios.
+
+## 🧪 Disclaimer
+
+Due to the lack of publicly available datasets combining experimentation, revenue, and support interactions, certain fields (e.g., order value and support tickets) were modeled using realistic assumptions to evaluate decision logic. This mirrors real-world constraints where analysts often work with incomplete data.
+
+## 📌 Author Note
+
+If you're a recruiter or interviewer, this project is best discussed as a decision case, not a modeling exercise.
