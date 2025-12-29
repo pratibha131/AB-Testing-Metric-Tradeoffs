@@ -120,7 +120,3 @@ It reflects how product analytics is practiced in real organizations—not textb
 ## 🧪 Disclaimer
 
 Due to the lack of publicly available datasets combining experimentation, revenue, and support interactions, certain fields (e.g., order value and support tickets) were modeled using realistic assumptions to evaluate decision logic. This mirrors real-world constraints where analysts often work with incomplete data.
-
-## 📌 Author Note
-
-If you're a recruiter or interviewer, this project is best discussed as a decision case, not a modeling exercise.
