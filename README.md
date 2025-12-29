@@ -101,7 +101,7 @@ Product & business metric reasoning
 
 ## 📂 Repository Contents
 
-A-B-Testing-Refactored.ipynb → End-to-end analysis notebook
+A-B-Testing.ipynb → End-to-end analysis notebook
 
 ab_test_full_project_dataset.csv → Dataset used for analysis
 
