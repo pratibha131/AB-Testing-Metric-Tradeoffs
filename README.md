@@ -1,146 +1,154 @@
-## 📊 A/B Testing Under Conflicting Metrics: Revenue-Driven Decision Making
-### 🔍 Project Overview
+# 📊 A/B Testing Under Metric Tradeoffs: Revenue-Driven Product Decision
+## 🚀 Project Overview
 
-This project evaluates a real-world product A/B experiment where a new landing page introduced conflicting signals:
+This project evaluates a product A/B experiment where a new landing page introduced conflicting performance signals:
 
 Conversion rate showed minimal change
 
-Average order value declined
+Average Order Value (AOV) declined
 
-Customer support tickets increased
+Customer Support Tickets increased
 
-The objective was not to optimize a single metric, but to determine whether the experiment should be shipped, partially rolled out, or rolled back, using business-first decision logic.
+Instead of optimizing a single metric, the analysis focuses on decision-making under tradeoffs, using Net Revenue Per User (NRPU) as the primary business metric.
 
-### 🎯 Business Question
+### The goal is to answer a real product question:
 
-Should the company ship the new landing page when conversion, revenue, and operational metrics disagree?
+Should the company ship, partially roll out, or roll back the new landing page?
 
-This mirrors real product analytics problems where metric conflicts and trade-offs drive decision-making.
+## 🎯 Business Context & Motivation
 
-### 🧠 Key Analytical Approach
+In real product teams, experiments often succeed on surface-level metrics (e.g., conversion) while silently damaging revenue or operations.
 
-Instead of relying on vanity metrics, the analysis followed a structured decision framework:
+This project mirrors that reality by:
 
-Experiment Hygiene
+Prioritizing unit economics over vanity metrics
 
-Verified randomization and group balance
+Incorporating operational cost signals (support tickets)
+
+Making a binary business decision, not just reporting statistics
+
+## 🧠 Analytical Framework
+
+The analysis follows a structured, industry-aligned approach:
+
+1️⃣ Experiment Validation
+
+Verified group balance and randomization
 
 Removed contaminated observations where treatment exposure did not match assignment
 
-#### Metric Hierarchy
+Ensured causal interpretability before analysis
 
-Conversion Rate → Behavioral signal (gatekeeper)
+2️⃣ Metric Hierarchy (Critical)
 
-Average Order Value → Transaction quality
+Metrics were evaluated in increasing order of business importance:
 
-Net Revenue Per User (Primary Decision Metric)
+Conversion Rate → behavioral signal (gatekeeper)
 
-### Descriptive Analysis & Visualization
+Average Order Value (AOV) → transaction quality
+
+Net Revenue Per User (NRPU) → primary decision metric
+
+This avoids false positives caused by single-metric optimization.
+
+## 📊 Exploratory & Descriptive Analysis
+
+Initial EDA was used to surface early warning signals before hypothesis testing:
+
+User distribution across experiment groups
+
+Conversion behavior
 
 Order value distributions
 
 Support ticket pressure
 
-### Early warning signals before hypothesis testing
+This step prevents blind reliance on statistical tests.
 
-### Segmentation Analysis
+## 📐 Hypothesis Definition
 
-New vs returning users
+Primary Hypothesis (Business-Driven)
 
-Tested feasibility of partial rollout
+H₀ (Null): The new landing page does not improve Net Revenue Per User
 
-Uncertainty & Risk Assessment
+H₁ (Alternative): The new landing page increases Net Revenue Per User
 
-Bootstrap confidence intervals
+Secondary metrics (conversion rate, AOV) are evaluated to explain why NRPU changes.
 
-### Effect size vs statistical significance
+## 🔬 Statistical Methodology
 
-## Business risk framing
+Descriptive statistics for behavioral diagnostics
 
-### 📈 Key Findings
+Segmentation by new vs returning users
 
-Net Revenue Per User declined by ~17% in the treatment group
+Bootstrap confidence intervals for NRPU to assess uncertainty
 
-Average Order Value dropped by over 20%
+Effect size interpretation to distinguish statistical vs practical significance
 
-Customer support tickets increased significantly across all user segments
+The focus is on decision reliability, not p-value chasing.
 
-#### Revenue decline was:
+## 📈 Key Results (Summary)
+Metric	Control	Treatment	Impact
+Conversion Rate	~12.04%	~11.88%	↓ Slight
+Average Order Value	~119.8	~95.1	↓ ~21%
+Net Revenue Per User	~18.82	~15.70	↓ ~16–17%
+Support Tickets	Lower	Higher	↑ Operational risk
 
-Consistent for both new and returning users
+## Segmentation Insight
 
-Statistically reliable (non-overlapping confidence intervals)
+Revenue decline observed for both new and returning users
 
-Practically significant from a business standpoint
+Support tickets increased across all segments
+
+Partial rollout is not justified
+
+Bootstrap confidence intervals for NRPU were non-overlapping, indicating the decline is statistically reliable and unlikely due to random noise.
 
 ## 🚫 Final Recommendation
+Decision: Roll Back the Experiment
 
-Roll back the experiment.
+Despite minimal change in conversion rate, the new landing page causes a material and reliable decline in net revenue per user, coupled with a significant increase in customer support burden.
 
-Shipping the new landing page would expose the business to:
+Shipping the experiment would expose the business to:
 
-Sustained revenue loss per user
+Sustained revenue loss
 
-Increased operational and support costs
+Increased operational costs
 
-Elevated risk of long-term user dissatisfaction
+Higher risk of user dissatisfaction and long-term churn
 
-The data does not support a partial rollout.
+## Recommendation: Roll back the change and redesign the experience to address order-value dilution and user friction before re-testing.
 
-## 🛠️ Tools & Techniques
+📁 Repository Structure
+AB-Testing-Metric-Tradeoffs/
+├── README.md                         # Project overview & decision narrative
+├── A-B-Testing_Final.ipynb           # Final, decision-focused analysis
+├── ab_test_full_project_dataset.csv  # Dataset used for analysis
+└── drafts/
+    └── A-B-Testing.ipynb             # Exploratory analysis & iteration
 
-Python (Pandas, NumPy)
+## Notebook Guidance
 
-Data visualization (Matplotlib, Seaborn)
+Recruiters & reviewers: Focus on A-B-Testing_Final.ipynb
 
-Bootstrap confidence intervals
+Draft notebook is included to demonstrate analytical iteration and learning
 
-A/B testing best practices
+## ⚠️ Data Disclaimer
 
-Product & business metric reasoning
+Due to the lack of public datasets combining experimentation, revenue, and support metrics, certain fields (e.g., order value and support tickets) were modeled using realistic assumptions.
 
-### 📂 Project Structure & Notebooks
-
-This repository contains both the final analysis deliverable and an exploratory draft to reflect a realistic analytics workflow.
-
-#### 🔹 Final Analysis (Primary)
-
-A-B-Testing-Refactored.ipynb
-
-Polished, end-to-end analysis
-
-Decision-focused and business-oriented
-
-Uses net revenue per user as the primary metric
-
-Includes segmentation, uncertainty analysis, and final recommendation
-
-👉 This notebook represents the final deliverable that would be shared with stakeholders.
-
-#### 🔹 Exploratory Draft (Iteration & Learning)
-
-drafts/A-B-Testing-Exploration.ipynb
-
-Early exploratory analysis
-
-Metric exploration and hypothesis refinement
-
-Iterative steps that informed the final conclusions
-
-👉 Included to demonstrate the analysis → refinement → decision workflow commonly used in real teams.
+The objective is to demonstrate analytical reasoning, metric tradeoff handling, and decision-making, which closely mirrors real-world constraints faced by product analysts.
 
 ## 💡 Why This Project Matters
 
-This project emphasizes:
+This project demonstrates:
 
-Decision-making under uncertainty
+Decision-making under conflicting metrics
 
-Metric trade-offs instead of single-metric optimization
+Revenue-first analytical thinking
 
-Business impact over statistical novelty
+Awareness of operational costs
 
-It reflects how product analytics is practiced in real organizations—not textbook scenarios.
+Practical use of uncertainty and effect size
 
-## 🧪 Disclaimer
-
-Due to the lack of publicly available datasets combining experimentation, revenue, and support interactions, certain fields (e.g., order value and support tickets) were modeled using realistic assumptions to evaluate decision logic. This mirrors real-world constraints where analysts often work with incomplete data.
+Willingness to reject a feature based on evidence
