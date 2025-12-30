@@ -99,11 +99,35 @@ A/B testing best practices
 
 Product & business metric reasoning
 
-## 📂 Repository Contents
+### 📂 Project Structure & Notebooks
 
-A-B-Testing.ipynb → End-to-end analysis notebook
+This repository contains both the final analysis deliverable and an exploratory draft to reflect a realistic analytics workflow.
 
-ab_test_full_project_dataset.csv → Dataset used for analysis
+#### 🔹 Final Analysis (Primary)
+
+A-B-Testing-Refactored.ipynb
+
+Polished, end-to-end analysis
+
+Decision-focused and business-oriented
+
+Uses net revenue per user as the primary metric
+
+Includes segmentation, uncertainty analysis, and final recommendation
+
+👉 This notebook represents the final deliverable that would be shared with stakeholders.
+
+#### 🔹 Exploratory Draft (Iteration & Learning)
+
+drafts/A-B-Testing-Exploration.ipynb
+
+Early exploratory analysis
+
+Metric exploration and hypothesis refinement
+
+Iterative steps that informed the final conclusions
+
+👉 Included to demonstrate the analysis → refinement → decision workflow commonly used in real teams.
 
 ## 💡 Why This Project Matters
 
