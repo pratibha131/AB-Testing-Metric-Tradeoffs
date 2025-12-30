@@ -146,10 +146,15 @@ Higher long-term churn risk
 
 ## 📁 Repository Structure
 AB-Testing-Metric-Tradeoffs/
+
 ├── README.md                         # Decision narrative (this file)
+
 ├── A-B-Testing_Final.ipynb           # Final, interview-ready analysis
+
 ├── ab_test_full_project_dataset.csv  # Dataset used for analysis
+
 └── drafts/
+
     └── A-B-Testing.ipynb             # Exploratory iteration
 
 ## 📊 Dataset Origin & Assumptions
