@@ -92,15 +92,15 @@ Bootstrap confidence intervals for NRPU
 Effect size interpretation to distinguish statistical vs practical significance
 
 ## 📈 Key Results (What Actually Happened)
-Metric	| Control	| Treatment |	Impact
+Metric	              | Control	| Treatment |	Impact
 
-Conversion Rate	| ~12.04%	| ~11.88%	| Slight decrease
+Conversion Rate	      | ~12.04%	| ~11.88% 	| Slight decrease
 
-Average Order Value	| ~119.8 | ~95.1	| ↓ ~21%
+Average Order Value	  | ~119.8  | ~95.1	    | ↓ ~21%
 
-Net Revenue Per User |	~18.82 | ~15.70 | ↓ ~16–17%
+Net Revenue Per User  |	~18.82  | ~15.70    | ↓ ~16–17%
 
-Support Tickets	Lower |	Higher | Increased | operational risk
+Support Tickets	Lower |	Higher  | Increased | operational risk
 
 ## Segmentation Findings
 
