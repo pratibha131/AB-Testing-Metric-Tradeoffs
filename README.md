@@ -95,8 +95,11 @@ Effect size interpretation to distinguish statistical vs practical significance
 Metric	| Control	| Treatment |	Impact
 
 Conversion Rate	| ~12.04%	| ~11.88%	| Slight decrease
+
 Average Order Value	| ~119.8 | ~95.1	| ↓ ~21%
+
 Net Revenue Per User |	~18.82 | ~15.70 | ↓ ~16–17%
+
 Support Tickets	Lower |	Higher | Increased | operational risk
 
 ## Segmentation Findings
