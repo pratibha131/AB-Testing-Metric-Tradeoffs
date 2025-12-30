@@ -89,9 +89,13 @@ The focus is on decision reliability, not p-value chasing.
 
 ## 📈 Key Results (Summary)
 Metric	Control	Treatment	Impact
+
 Conversion Rate	~12.04%	~11.88%	↓ Slight
+
 Average Order Value	~119.8	~95.1	↓ ~21%
+
 Net Revenue Per User	~18.82	~15.70	↓ ~16–17%
+
 Support Tickets	Lower	Higher	↑ Operational risk
 
 ## Segmentation Insight
@@ -122,8 +126,11 @@ Higher risk of user dissatisfaction and long-term churn
 📁 Repository Structure
 AB-Testing-Metric-Tradeoffs/
 ├── README.md                         # Project overview & decision narrative
+
 ├── A-B-Testing_Final.ipynb           # Final, decision-focused analysis
+
 ├── ab_test_full_project_dataset.csv  # Dataset used for analysis
+
 └── drafts/
     └── A-B-Testing.ipynb             # Exploratory analysis & iteration
 
