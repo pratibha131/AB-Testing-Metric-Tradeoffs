@@ -1,5 +1,5 @@
 # 📊 A/B Testing Under Metric Tradeoffs: Revenue-Driven Product Decision
-## 🚀 Executive Summary (Read This First)
+## 🚀 Executive Summary
 
 A new landing page was tested to improve user conversion.
 While surface-level metrics suggested little change, deeper analysis revealed a material decline in business value.
