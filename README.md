@@ -108,6 +108,18 @@ Partial rollout is not justified
 
 Bootstrap confidence intervals for NRPU were non-overlapping, indicating the decline is statistically reliable and unlikely due to random noise.
 
+## 📉 Visual Summary of Results
+
+### Net Revenue Per User (Primary Decision Metric)
+![NRPU Comparison](charts/nrpu_comparison.png)
+
+### Order Value Distribution
+![Order Value Distribution](charts/order_value_distribution.png)
+
+### Customer Support Ticket Rate
+![Support Tickets](charts/support_ticket_rate.png)
+
+
 ## 🚫 Final Recommendation
 Decision: Roll Back the Experiment
 
