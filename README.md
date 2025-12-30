@@ -146,7 +146,6 @@ Higher long-term churn risk
 
 ## 📁 Repository Structure
 AB-Testing-Metric-Tradeoffs/
-
 ├── README.md                         # Decision narrative (this file)
 
 ├── A-B-Testing_Final.ipynb           # Final, interview-ready analysis
@@ -155,7 +154,7 @@ AB-Testing-Metric-Tradeoffs/
 
 └── drafts/
 
-    └── A-B-Testing.ipynb             # Exploratory iteration
+└── A-B-Testing.ipynb             # Exploratory iteration
 
 ## 📊 Dataset Origin & Assumptions
 
