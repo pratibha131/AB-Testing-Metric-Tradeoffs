@@ -92,15 +92,15 @@ Bootstrap confidence intervals for NRPU
 Effect size interpretation to distinguish statistical vs practical significance
 
 ## 📈 Key Results (What Actually Happened)
-Metric	              | Control	| Treatment |	Impact
 
-Conversion Rate	      | ~12.04%	| ~11.88% 	| Slight decrease
+| Metric                          | Control (Old Page) | Treatment (New Page) | Impact        | Business Interpretation                      |
+| ------------------------------- | ------------------ | -------------------- | ------------- | -------------------------------------------- |
+| **Conversion Rate**             | ~12.04%            | ~11.88%              | ↓ ~1.3%       | No meaningful improvement in user conversion |
+| **Average Order Value (AOV)**   | ~119.8             | ~95.1                | ↓ ~20–21%     | Lower-value orders placed under treatment    |
+| **Net Revenue Per User (NRPU)** | ~18.82             | ~15.70               | ↓ ~16–17%     | **Material revenue loss per user**           |
+| **Support Ticket Rate**         | Lower              | Higher               | ↑ Significant | Increased user friction and operational cost |
 
-Average Order Value	  | ~119.8  | ~95.1	    | ↓ ~21%
-
-Net Revenue Per User  |	~18.82  | ~15.70    | ↓ ~16–17%
-
-Support Tickets	Lower |	Higher  | Increased | operational risk
+Although conversion rate showed minimal change, the sharp decline in order value and increase in support tickets caused a substantial drop in net revenue per user, making the experiment economically unviable.
 
 ## Segmentation Findings
 
