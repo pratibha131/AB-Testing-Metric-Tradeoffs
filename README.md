@@ -163,7 +163,7 @@ Due to the lack of public datasets combining experimentation, revenue, and opera
 
 The simulation is designed to reflect plausible business behavior and is used solely to demonstrate analytical reasoning, metric tradeoff evaluation, and decision-making, not to claim real production outcomes.
 
-## 💡 Why This Project Matters (Resume Framing)
+## 💡 Why This Project Matters 
 
 This project demonstrates:
 
