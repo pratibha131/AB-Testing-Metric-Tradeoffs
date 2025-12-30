@@ -159,9 +159,26 @@ AB-Testing-Metric-Tradeoffs/
 
 ## 📊 Dataset Origin & Assumptions
 
-Due to the lack of public datasets combining experimentation, revenue, and operational metrics, certain fields (order_value, support_ticket) were simulated using realistic assumptions.
+This analysis is based on a **real A/B testing dataset** sourced from Kaggle:
+- *E-commerce A/B Testing (2022 Dataset) : https://www.kaggle.com/datasets/putdejudomthai/ecommerce-ab-testing-2022-dataset1?utm_source=chatgpt.com*
 
-The simulation is designed to reflect plausible business behavior and is used solely to demonstrate analytical reasoning, metric tradeoff evaluation, and decision-making, not to claim real production outcomes.
+The original dataset provides user-level experiment assignment and conversion behavior.  
+However, it does not include **transaction value** or **operational cost signals**, which are critical for evaluating real business decisions.
+
+To enable revenue- and cost-aware analysis:
+
+- **Order Value (`order_value`)** was modeled using realistic assumptions conditioned on conversion behavior, reflecting typical e-commerce purchase distributions.
+- **Customer Support Tickets (`support_ticket`)** were simulated as a proxy for user friction and operational cost, based on observed behavioral differences between experiment groups.
+
+These derived fields were introduced **only to demonstrate analytical reasoning under metric tradeoffs**, not to claim real production outcomes.
+
+The purpose of this project is to evaluate:
+- how conflicting metrics interact,
+- how business-aligned metrics (NRPU) change decisions,
+- and how uncertainty should influence product rollouts,
+
+rather than to reproduce exact real-world revenue figures.
+
 
 ## 💡 Why This Project Matters 
 
