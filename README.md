@@ -154,6 +154,7 @@ Higher long-term churn risk
 
 ## 📁 Repository Structure
 AB-Testing-Metric-Tradeoffs/
+├── Dashboards/                        # Dashboards images 
 
 ├── README.md                         # Decision narrative (this file)
 
