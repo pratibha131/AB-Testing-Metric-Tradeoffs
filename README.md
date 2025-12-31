@@ -1,4 +1,5 @@
 # 📊 A/B Testing Under Metric Tradeoffs: Revenue-Driven Product Decision
+### 📊 **Includes:** Interactive Power BI dashboards, revenue-driven A/B testing analysis, and executive-level decision framing.
 ## 🚀 Executive Summary
 
 A new landing page was tested to improve user conversion.
@@ -124,6 +125,17 @@ Lower-value orders explain why revenue declined despite similar conversion behav
 Customer Support Ticket Rate
 ![Support Tickets](charts/support_ticket_rate.png)
 Increased user friction raises operational cost, compounding the revenue loss.
+
+## 📊 Executive Dashboard
+
+### Executive Summary — Decision View
+![Executive Summary](Dashboards/executive_summary.png)
+
+### Metric Tradeoffs — Why Conversion Misled Us
+![Metric Tradeoffs](Dashboards/metric_tradeoffs.png)
+
+### Segmentation & Risk — No Safe Rollout
+![Segmentation & Risk](Dashboards/segmentation_risk.png)
 
 ## 🔗 How Metric Tradeoffs Drove the Decision
 
