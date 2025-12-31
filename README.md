@@ -1,5 +1,8 @@
 # 📊 A/B Testing Under Metric Tradeoffs: Revenue-Driven Product Decision
 ### 📊 **Includes:** Interactive Power BI dashboards, revenue-driven A/B testing analysis, and executive-level decision framing.
+
+##### 📌 **Note:** To view the Power BI dashboard, please sign in with a Microsoft account, as the report is hosted on Power BI Service.
+
 🔗 Power BI Dashboard  : https://app.powerbi.com/groups/me/reports/6f9fc1a0-1693-4e00-b806-8a26a5025b11/e4d7d76b9ece01b86a27?redirectedFromSignup=1&experience=power-bi
 ## 🚀 Executive Summary
 
