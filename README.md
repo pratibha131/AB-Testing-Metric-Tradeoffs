@@ -42,21 +42,17 @@ Proxy for user friction and operational cost.
 👉 Decisions are made on NRPU, not conversion alone.
 
 ## 📐 Hypotheses & Decision Framework
-Primary Hypothesis (Business-Driven)
 
-H₀ (Null Hypothesis):
-The new landing page does not increase Net Revenue Per User (NRPU).
+**Primary Metric:** Net Revenue Per User (NRPU)
 
-H₁ (Alternative Hypothesis):
-The new landing page increases Net Revenue Per User (NRPU).
+- **H₀:** The new landing page does not increase NRPU.
+- 
+- **H₁:** The new landing page increases NRPU.
 
-## Decision Rule
+**Decision Rule:**
+Ship only if NRPU increases meaningfully without increasing operational risk.
 
-Ship only if NRPU increases meaningfully and confidence intervals exclude material revenue loss.
-
-Conversion rate changes alone are insufficient to justify shipping.
-
-Confidence intervals are preferred over point estimates to explicitly account for uncertainty.
+Conversion rate alone is not sufficient for decision-making.
 
 ## 🔬 Analytical Approach
 ### 1️⃣ Experiment Validation
